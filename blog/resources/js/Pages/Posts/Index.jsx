@@ -39,9 +39,9 @@ export default function Index({posts}) {
                         </td>
                         <td className="px-6 py-4 whitespace-no-wrap border-b border-gray-500">
                             <Link href={route('posts.edit', post.id)} className="text-blue-500 hover:underline">Edit</Link>
-                             <td className="px-6 py-4 whitespace-no-wrap border-b border-gray-500">
+                            <Link href={route('posts.show', post.id)} className="text-blue-500 hover:underline">show</Link>
                             <Link href={route('posts.destroy', post.id)} className="text-blue-500 hover:underline">Delete</Link>
-                        </td>
+                      
                         </td>
                         
                     </tr>
